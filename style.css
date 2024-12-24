@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    background: url('https://www.w3schools.com/w3images/woods.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Center all containers */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Heading Styles */
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+/* Form and Button Styling */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Input Focus */
+input:focus, select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8);
+}
+
+/* Login, Sign-Up, and App Container */
+#loginContainer, #signUpContainer, #appContainer {
+    background-color: rgba(0, 0, 0, 0.7); /* semi-transparent background */
+    border-radius: 10px;
+    padding: 30px;
+    width: 80%;
+    max-width: 450px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 1.5s forwards;
+}
+
+/* Animation for containers */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Styling for Sign Up and Login Error Messages */
+#signUpMessage, #loginErrorMessage {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Success Message */
+#signUpMessage {
+    color: #28a745; /* Green for success */
+}
+
+/* Error Message */
+#loginErrorMessage {
+    color: #dc3545; /* Red for error */
+}
+
+/* Number Info App Styling */
+#appContainer {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 650px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+/* Styling for the Facts */
+#factDisplay {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover Animation for Input Fields */
+input:hover, select:hover {
+    transform: scale(1.05);
+}
+
+/* Link Styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #loginContainer, #signUpContainer, #appContainer {
+        width: 90%;
+        padding: 20px;
+    }
+}
